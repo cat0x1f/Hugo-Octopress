@@ -1,60 +1,17 @@
 # Hugo-Octopress <!-- omit in toc -->
+
+这个分支是为了 `catifox.xyz` 而修改的。
+
+修改内容：
+
+- 修改了默认字体
+- 删除演示截图
+- 删除示例网站
+- 图标字体更新
+
+---
 Hugo-Octopress is a port of the classic [Octopress][octopress-link] theme to
 [Hugo][hugo-link].
-
-Live demo using the unmodified theme:
-
-* [http://hugo-octopress-test.s3-website-us-east-1.amazonaws.com/][live-demo].
-* Source: [https://github.com/parsiya/Hugo-Octopress-Test][test-repo].
-
-[live-demo]: http://hugo-octopress-test.s3-website-us-east-1.amazonaws.com/
-[test-repo]: https://github.com/parsiya/Hugo-Octopress-Test
-
-My personal website with the compact index (see below):
-
-* [https://parsiya.net](https://parsiya.net).
-* Source: [https://github.com/parsiya/parsiya.net](https://github.com/parsiya/parsiya.net)
-
-## Contents <!-- omit in toc -->
-- [Quick start](#quick-start)
-- [Configuration](#configuration)
-- [Code highlight](#code-highlight)
-- [Goldmark vs. Blackfriday](#goldmark-vs-blackfriday)
-- [CSS override](#css-override)
-- [Navigation menu](#navigation-menu)
-- [Extending Headers and Footers](#extending-headers-and-footers)
-- [Sidebar](#sidebar)
-  - [Sidebar text](#sidebar-text)
-  - [Social network icons](#social-network-icons)
-  - [Sidebar menu](#sidebar-menu)
-  - [Recent posts](#recent-posts)
-- [Shortcodes](#shortcodes)
-  - [Code caption](#code-caption)
-  - [Image caption](#image-caption)
-  - [Table of Contents](#table-of-contents)
-- [Pages](#pages)
-  - [License page](#license-page)
-  - [Not Found or 404.html](#not-found-or-404html)
-  - [Taxonomy pages](#taxonomy-pages)
-  - [Individual pages](#individual-pages)
-- [Table of contents](#table-of-contents-1)
-  - [toc configuration](#toc-configuration)
-  - [Use toc in Frontmatter](#use-toc-in-frontmatter)
-  - [Use the toc Shortcode](#use-the-toc-shortcode)
-  - [Editor Plugins](#editor-plugins)
-- [Disqus](#disqus)
-- [Twitter Card](#twitter-card)
-- [Compact Index](#compact-index)
-- [mainSections](#mainsections)
-- [Troubleshooting](#troubleshooting)
-  - [Hugo page summary bug](#hugo-page-summary-bug)
-  - [Empty Posts Link on Homepage](#empty-posts-link-on-homepage)
-- [Issues/TODO](#issuestodo)
-- [Attribution](#attribution)
-- [Ported by](#ported-by)
-- [Theme license](#theme-license)
-
-![screenshot](https://raw.githubusercontent.com/parsiya/Hugo-Octopress/master/images/screenshot.png)
 
 ## Quick start
 Add the theme to your existing site or [Hugo's quick start][hugo-quickstart].
@@ -321,11 +278,11 @@ sidebarText = """Here's a [link to google](https://www.google.com)
 
 New paragraph
 
-Another paragraph which has two spaces in the end to create a new line using markdown  
+Another paragraph which has two spaces in the end to create a new line using markdown
 New line but not a new paragraph
 """
 ```
-  
+
 If you want to use `</br>` here and not just markdown, you need to enable unsafe
 rendering of HTML in Goldmark. You can do this like this.
 
@@ -632,7 +589,7 @@ Twitter card support can be enabled in the config file under `Params`:
   # Enable.
   twitterCardEnabled = true
   # Don't include the @.
-  # twitterCardSite = 
+  # twitterCardSite =
   twitterCardDomain = "parsiya.net"
   # Don't include the @.
   twitterCardAuthor = "CryptoGangsta"
@@ -697,9 +654,6 @@ See the code in `layouts/partials/classic_index.html`:
   ...
 ```
 
-## Troubleshooting
-Common issues when dealing with the theme.
-
 ### Hugo page summary bug
 Without a summary divider `<!--more-->`, Hugo uses the first 70 words of the
 post. The result is usually not pretty and contains raw HTML. Always use the
@@ -735,17 +689,6 @@ For more information please see:
 This should not be an issue anymore because the theme's minimum version of Hugo
 has been bumped.
 
-## Issues/TODO
-If you discover any issues/bugs or want new features please use the GitHub issue
-tracker. Please keep in my mind that development has not been my day job for
-quite a while and I may be slow in fixing things (don't be surprised if I ask
-you about details).
-
-**The css is a mess.** The CSS file is taken directly from the classic Octopress
-theme. I found it easier to just modify the templates to generate HTML code
-similar to Octopress' output and use the existing CSS file. It's bulky (around
-53KBs and 2300 lines) and it probably has code for elements that are never used
-(also duplicates).
 
 ## Attribution
 * [Octopress][octopress-link] is created by [Brandon Mathis][mathis-link].
