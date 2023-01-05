@@ -1212,6 +1212,10 @@ div.highlight > pre > code,
 pre > code {
 	overflow-y: hidden;
 	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 div.linenodiv > pre > code,
 td > div.highlight > pre > code {
