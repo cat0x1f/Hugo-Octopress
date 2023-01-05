@@ -89,7 +89,7 @@ video {
 }
 html {
 	line-height: 1;
-	background: top left #252525;
+	background: top left #333;
 }
 ol,
 ul {
@@ -735,6 +735,10 @@ body > nav {
 	border-bottom: 1px solid #8c8c8c;
 	padding-top: 0.35em;
 	padding-bottom: 0.35em;
+	-moz-border-radius-topleft: 0.4em;
+	border-top-left-radius: 0.4em;
+	-moz-border-radius-topright: 0.4em;
+	border-top-right-radius: 0.4em;
 }
 body > nav form {
 	-webkit-background-clip: padding;
