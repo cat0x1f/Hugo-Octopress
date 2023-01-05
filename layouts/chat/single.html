@@ -11,14 +11,21 @@
 						{{ .Title }}
 						<!-- we don't need page title to be a link on the actual page -->
 					</h1>
+					<script type="text/javascript" src="/cactus/cactus.js"></script>
+
+					<link rel="stylesheet" href="/cactus/style.css" type="text/css" />
 				</header>
-				<div class="entry-content">
-					<!-- insert table of contents if it is set either in the config file or in the frontmatter - frontmatter has priority -->
-					{{ $.Scratch.Set "pagetoc" .TableOfContents }} {{ if or (and (isset
-					.Params "toc") (eq .Params.toc true)) (and (not (isset .Params "toc"))
-					(eq .Site.Params.tableOfContents true)) }} {{ $.Scratch.Get "pagetoc"
-					}} {{ end }} {{ .Content }}
-				</div>
+				<div id="comment-section"></div>
+
+				<script>
+					initComments({
+						node: document.getElementById("comment-section"),
+						defaultHomeserverUrl: {{ .Site.Params.defaultHomeserverUrl }},
+						serverName: {{ .Site.Params.serverName }},
+						siteName: {{ .Site.Params.siteName }},
+						commentSectionId: "section1",
+					});
+				</script>
 			</article>
 		</div>
 		{{ partial "sidebar.html" . }}
