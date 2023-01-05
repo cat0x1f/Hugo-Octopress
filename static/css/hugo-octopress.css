@@ -347,12 +347,12 @@ article blockquote cite:before {
 	padding-left: 0.3em;
 	color: #aaa;
 }
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
 	article blockquote {
 		padding-left: 1.5em;
 		border-left-width: 4px;
 	}
-}
+} */
 .pullquote-left:before,
 .pullquote-right:before {
 	padding: 0;
@@ -450,7 +450,7 @@ body div.pagination {
 		margin-right: 35px;
 	}
 }
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
 	body #content > article,
 	body #content > div > article,
 	body #content > div > section,
@@ -464,7 +464,7 @@ body div.pagination {
 		margin-left: 55px;
 		margin-right: 55px;
 	}
-}
+} */
 body > header {
 	font-size: 1em;
 	padding-top: 1.5em;
@@ -683,7 +683,7 @@ body.sidebar-footer .toggle-sidebar {
 		clear: both;
 	}
 }
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
 	body > header {
 		font-size: 1.3em;
 	}
@@ -703,7 +703,7 @@ body.sidebar-footer .toggle-sidebar {
 		padding-left: 55px;
 		padding-right: 55px;
 	}
-}
+} */
 body > header h1 a,
 body > header h1 a:hover,
 body > header h1 a:visited {
@@ -887,7 +887,7 @@ body > nav ul {
 	background: 0.3em 0.25em no-repeat #f2f2f2;
 	text-indent: 1.3em;
 }
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
 	body > nav form {
 		width: 215px;
 	}
@@ -897,7 +897,7 @@ body > nav ul {
 	.maskImage body > nav ul[data-subscription$="email"] + form {
 		width: 173px;
 	}
-}
+} */
 .maskImage ul.subscription {
 	position: relative;
 	top: 0.2em;
