@@ -1,0 +1,28 @@
+<!-- Layout for individual pages -->
+
+{{ partial "header.html" . }}
+
+<div id="main">
+	<div id="content">
+		<div>
+			<article class="hentry" role="article">
+				<header>
+					<h1 class="entry-title">
+						{{ .Title }}
+						<!-- we don't need page title to be a link on the actual page -->
+					</h1>
+				</header>
+				<div class="entry-content">
+					<!-- insert table of contents if it is set either in the config file or in the frontmatter - frontmatter has priority -->
+					{{ $.Scratch.Set "pagetoc" .TableOfContents }} {{ if or (and (isset
+					.Params "toc") (eq .Params.toc true)) (and (not (isset .Params "toc"))
+					(eq .Site.Params.tableOfContents true)) }} {{ $.Scratch.Get "pagetoc"
+					}} {{ end }} {{ .Content }}
+				</div>
+			</article>
+		</div>
+		{{ partial "sidebar.html" . }}
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
