@@ -411,7 +411,8 @@ body > nav {
 	padding-left: 18px;
 	padding-right: 18px;
 }
-@media only screen and (min-width: 480px) {
+/* 屏幕宽度小于480px时会改变，但我觉得没有必要 */
+/* @media only screen and (min-width: 480px) {
 	body #content > article,
 	body #content > div > article,
 	body #content > div > section,
@@ -421,7 +422,7 @@ body > nav {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-}
+} */
 @media only screen and (min-width: 768px) {
 	body #content > article,
 	body #content > div > article,
