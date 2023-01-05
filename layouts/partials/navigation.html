@@ -2,7 +2,7 @@
 <fieldset class="mobile-nav">
   <!-- apart from Disqus and analytics, this is the only place where we need JavaScript -->
   <select onchange="location = this.value;">
-    <option value="">Navigate…</option>
+    <option value="">网站导航</option>
       {{ range .Site.Menus.main }}
         <option value="{{ .URL | absURL }}">» {{ .Name }}</option>
       {{ end }}

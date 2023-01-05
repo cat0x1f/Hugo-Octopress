@@ -788,7 +788,7 @@ body > nav fieldset.mobile-nav {
 }
 body > nav fieldset.mobile-nav select {
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border: 1px solid #888;
 	border-radius: 0.5em;
 }
