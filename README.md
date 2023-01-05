@@ -7,7 +7,8 @@
 - 修改了默认字体
 - 删除演示截图
 - 删除示例网站
-- 图标字体更新
+- 修改某些样式
+- 格式化 CSS 代码
 
 ---
 Hugo-Octopress is a port of the classic [Octopress][octopress-link] theme to
