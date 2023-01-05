@@ -9,6 +9,12 @@
 - 删除示例网站
 - 修改某些样式
 - 格式化 CSS 代码
+- 链接前面无故的空格
+
+TODO:
+
+- 页面宽度为 550px 时的变化
+- 中文字体适配
 
 ---
 Hugo-Octopress is a port of the classic [Octopress][octopress-link] theme to
