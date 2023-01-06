@@ -1,0 +1,182 @@
+baseurl = "https://example.site"
+disablePathToLower = false
+languageCode = "zh-cn"
+title = "你的博客的名字"
+theme = "hugo-octopress"
+
+# 首页显示的文章数目
+paginate = 6
+
+[permalinks]
+post = "/blog/:year-:month-:day-:title/" # 更改帖子的 URL，和旧的样式一样
+
+[markup]
+  # 因为我们想渲染每个标题，所以默认值是 startLevel 2 和 endLevel 3
+  [markup.tableOfContents]
+    endLevel = 8
+    startLevel = 1
+  # 设置 Chroma 的高亮选项
+  # https://gohugo.io/getting-started/configuration-markup/#highlight
+  [markup.highlight]
+    style = "catppuccin-frappe"
+  # 如果你想使用旧的 Markdown 渲染器 Blackfriday
+  # defaultMarkdownHandler = "blackfriday"
+  #   [markup.blackFriday]
+  #     hrefTargetBlank = true # 在新标签页打开链接
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # 允许渲染文章里的 html
+
+[params]
+  # --- Cactus 设置 ---
+  # https://cactus.chat/docs/getting-started/quick-start/
+  defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
+  serverName = "cactus.chat"
+  siteName = "<YOUR-SITE-NAME>"
+
+  # --- 侧边栏设置 ---
+  # 显示最新的文章的数量在侧边栏，设置0或者移除选项为不显示
+  sidebarRecentLimit = 0
+
+  # 侧边栏标题，可以用 Markdown 语法
+  sidebarHeader = "这是哪儿？"
+
+  # 侧边栏文字，也支持 Markdown
+  sidebarText = """这是一个示例侧边栏"""
+
+  # 侧边栏菜单，如果为true会加上新的侧边栏目录在侧边栏文字和最新的文章之间
+  sidebarMenuEnabled = false
+  sidebarMenuHeader = "这是侧边栏"
+
+  # 侧边栏链接
+  github = ""
+  bitbucket = ""
+  twitter = ""
+  keybase = ""
+  stackoverflow = ""
+  linkedin = ""
+  youtube = ""
+  facebook = ""
+  instagram = ""
+
+
+  # --- 侧边栏设置结束 ---
+
+  # 如果设为true，除了链接外的导航菜单链接将在新窗口中打开
+  # 如果设为false，它们就会在同一窗口打开
+  navigationNewWindow = false
+
+  # 如果为false，所有的文章都会在首页渲染
+  truncate = true
+
+  # 作者之名（出现在tag和文章底部）
+  author = "你的名字"
+
+  # 这里是在标题下面显示的文本
+  subtitle = "这里是在标题下面显示的文本"
+
+  # 搜索引擎的 URL
+  searchEngineURL = "https://www.google.com/search"
+
+  # 「继续阅读」的标签，支持 Markdown 和内联 HTML
+  # 就像这样, &rarr; == right arrow.
+  continueReadingText = "你想要阅读更多吗? &rarr;"
+
+  # 谷歌分析代码（Google analytics code），如果你不需要就移除它，需要 JavaScript
+  # googleAnalytics = "UA-XXXXX-X"
+
+  # 可选的 piwik 跟踪
+  # [params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+
+  # 如果为true则显示rss图标
+  rss = false
+
+  # 如果为true则用一个文本标签代替RSS图标，覆盖上面的「rss」设置S
+  textrss = false
+
+  # 网站的默认描述
+  description = ""
+
+  # 用您自己的搜索关键字填充此内容，这些将出现在元标签中
+  # defaultKeywords = ["keyword1" , "keyword2" , "keyword3" , "keyword4"]
+
+  # CSS 覆写文件
+  # 路径应相对于「static」目录
+  # customCSS = ["css/custom.css","css/custom2.css"]
+
+  # 404.html 标题和文本，支持 Markdown
+  notFoundHeader = "这里空无一物"
+
+  notFoundText = """你可以从侧边链接离开这里.
+  """
+
+  # 如果为true则隐藏文章阅读时间
+  disableReadingTime = false
+
+  # 如果为true则禁止下载谷歌字体
+  disableGoogleFonts = false
+
+  # 如果为false或移除选项则使用本地字体
+  # remoteFonts = false
+
+  # 如果为false或移除选项则使用 FontAwesome CDN，否则使用 FontAwesome 本地字体
+  # fontAwesome = false
+
+  # 除非需要字母排序，否则不需要此条目
+  # sortTaxonomyAlphabetical = true
+
+  # Twitter 卡片设定
+  # 用这个选项打开
+  # twitterCardEnabled = true
+  # 不要包括 @
+  # twitterCardSite =
+  # twitterCardDomain = "parsiya.net"
+  # 不要包括 @
+  # twitterCardAuthor = "CryptoGangsta"
+
+  # 设置为true以启用紧凑型索引，设置为false或删除以返回经典视图
+  # compactIndex = true
+
+  # 设置主要选项
+  # mainSections = ["post", "blog"]
+
+# 菜单
+# 如果「navigationNewWindow」选项 (在 [params] 下面) 设置为true则所有除了root的链接都会在一个新窗口打开
+# 如果选项不存在或设置为false则会在同一个窗口打开所有的新链接
+[[menu.main]]
+  Name = "主页"
+  URL = "/"
+  weight = -5
+
+[[menu.main]]
+  Name = "标签"
+  URL = "/tags/"
+  weight = -4
+
+[[menu.main]]
+  Name = "归档"
+  URL = "/posts/"
+  weight = -3
+
+[[menu.main]]
+  Name = "关于"
+  URL = "/about/"
+  weight = -2
+
+[[menu.main]]
+  Name = "留言板"
+  URL = "/chat/"
+  weight = -1
+
+# 侧边栏目录
+# 设置在「[params]」选项下面的「"sidebarMenuEnabled = true"」
+# 标题文本是在「[params]」选项下面的「"sidebarMenuHeader"」
+
+[[menu.sidebar]]
+  Name = "关于"
+  URL = "/about/"
+  weight = 1
+
+
