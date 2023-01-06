@@ -293,7 +293,7 @@
 	flex-wrap: wrap;
 }
 .cactus-comment-displayname {
-	pointer-events:none;
+	pointer-events: none;
 	font-weight: 700;
 	cursor: pointer;
 	text-decoration: none;
@@ -313,7 +313,7 @@
 	color: var(--cactus-text-color--soft);
 }
 .cactus-message-image {
-	pointer-events:none;
+	pointer-events: none;
 	max-width: 100%;
 	height: auto;
 }
@@ -378,5 +378,8 @@
 	20% {
 		transform: scaleY(1);
 	}
+}
+.cactus-login-button {
+	display: none;
 }
 /*# sourceMappingURL=/style.css.map */
