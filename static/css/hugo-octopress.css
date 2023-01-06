@@ -767,10 +767,10 @@ body > nav form .search {
 }
 body > nav form .search:focus {
 	color: #444;
-	border-color: #80b1df;
-	-webkit-box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
-	-moz-box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
-	box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
+	border-color: #5791c7;
+	-webkit-box-shadow: #6eb9ff 0 0 4px, #6eb9ff 0 0 3px inset;
+	-moz-box-shadow: #6eb9ff 0 0 4px, #6eb9ff 0 0 3px inset;
+	box-shadow: #6eb9ff 0 0 4px, #6eb9ff 0 0 3px inset;
 	background-color: #fff;
 	outline: 0;
 }
