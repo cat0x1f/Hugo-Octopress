@@ -356,10 +356,6 @@
 	background-color: var(--cactus-button-color--strong);
 	cursor: pointer;
 }
-.cactus-button:active:not([disabled]) {
-	background-color: var(--cactus-button-color--stronger);
-	cursor: pointer;
-}
 .cactus-view-more {
 	display: flex;
 	justify-content: center;
@@ -401,7 +397,6 @@
 	height: 2.4rem;
 	border-radius: 4px;
 }
-
 .cactus-send-button {
 	display: flex;
 	height: 2.4rem;
@@ -420,5 +415,25 @@
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
+.cactus-send-button:active:not([disabled]) {
+	background: #1a70c7 !important;
+	background: -webkit-linear-gradient(top, #1a79d9, #1a70c7) !important;
+	background: linear-gradient(to bottom, #1a79d9, #1a70c7) !important;
+	box-shadow: 0 1px 2px rgba(255, 255, 255, 0.15) inset;
+}
+.cactus-button:active:not([disabled]) {
+	background: #ddd;
+	box-shadow: none;
+}
+.cactus-button:disabled {
+	display: flex;
+	align-items: center;
+	color: #666;
+	text-shadow: 0 1px 0 #fff;
+	background: #f1f1f2;
+	background: -webkit-linear-gradient(top, #f8f8f9, #e6e6e8);
+	background: linear-gradient(to bottom, #f8f8f9, #e6e6e8);
+	border: 1px solid #bbb;
+	box-shadow: 0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.1);
+}
 /*# sourceMappingURL=/style.css.map */
