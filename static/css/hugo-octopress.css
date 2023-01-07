@@ -752,7 +752,7 @@ body > nav form .search {
 	padding: 0.3em 0.5em 0;
 	font-size: 0.85em;
 	font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
-	line-height: 1.1em;
+	line-height: 1.6em;
 	width: 95%;
 	background-clip: padding-box;
 	color: #888;
@@ -791,6 +791,7 @@ body > nav fieldset.mobile-nav select {
 		0 1px 0 rgba(255, 255, 255, 0.1);
 	background: white;
 	color: black;
+	height: 1.9rem;
 }
 body > nav ul {
 	display: none;
@@ -865,7 +866,7 @@ body > nav ul {
 	body > nav form .search {
 		width: 93%;
 		font-size: 0.95em;
-		line-height: 1.2em;
+		line-height: 1.6em;
 	}
 	body > nav ul[data-subscription$="email"] + form {
 		width: 97px;
