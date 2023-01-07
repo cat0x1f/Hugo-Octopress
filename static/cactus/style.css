@@ -61,15 +61,18 @@
 	background-color: transparent;
 	border: none;
 }
-.cactus-error-close:hover:not([disabled]) {
+.cactus-error-close:hover:not([disabled]),
+.cactus-login-close:hover:not([disabled]) {
 	color: var(--cactus-button-color--strong);
 	cursor: pointer;
 }
-.cactus-error-close:active:not([disabled]) {
+.cactus-error-close:active:not([disabled]),
+.cactus-login-close:active:not([disabled]) {
 	color: var(--cactus-button-color--stronger);
 	cursor: pointer;
 }
-.cactus-error-close-icon {
+.cactus-error-close-icon,
+.cactus-login-close-icon {
 	inline-size: 20px;
 	block-size: 20px;
 }
@@ -78,6 +81,8 @@
 	font-weight: 700;
 	margin: 0;
 }
+.cactus-comment-content,
+.cactus-comments-list,
 .cactus-editor {
 	display: flex;
 	flex-direction: column;
@@ -91,11 +96,10 @@
 	flex: 1;
 	height: 8rem;
 	resize: none;
-	padding: 0.5em;
+	padding: 7px 50px 7px 10px;
 	box-sizing: content-box;
 	font: inherit;
 	font-size: inherit;
-	padding: 7px 50px 7px 10px;
 	width: 100%;
 	color: #49525c;
 	line-height: 17px;
@@ -139,8 +143,8 @@
 		0 1px 0 rgba(255, 255, 255, 0.1);
 	outline: 0;
 	box-sizing: border-box;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 .cactus-editor-name > span > input::placeholder {
 	color: var(--cactus-text-color--soft);
@@ -187,30 +191,21 @@
 	background-color: transparent;
 	border: none;
 }
-.cactus-login-close:hover:not([disabled]) {
-	color: var(--cactus-button-color--strong);
-	cursor: pointer;
-}
-.cactus-login-close:active:not([disabled]) {
-	color: var(--cactus-button-color--stronger);
-	cursor: pointer;
-}
-.cactus-login-close-icon {
-	inline-size: 20px;
-	block-size: 20px;
-}
 .cactus-login-title {
 	align-self: center;
 	font-size: 1.17em;
 	font-weight: 700;
 	margin: 0;
 }
-.cactus-login-client {
+.cactus-comments-container,
+.cactus-login-client,
+.cactus-login-credentials {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 }
-.cactus-login-client-title {
+.cactus-login-client-title,
+.cactus-login-credentials-title {
 	font-size: 1em;
 	font-weight: 700;
 	margin: 0;
@@ -218,16 +213,6 @@
 .cactus-matrixdotto-button {
 	justify-content: center;
 	text-decoration: none;
-}
-.cactus-login-credentials {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-}
-.cactus-login-credentials-title {
-	font-size: 1em;
-	font-weight: 700;
-	margin: 0;
 }
 .cactus-login-field {
 	display: flex;
@@ -258,16 +243,6 @@
 .cactus-login-credentials-button {
 	justify-content: center;
 }
-.cactus-comments-container {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-}
-.cactus-comments-list {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
-}
 .cactus-comment {
 	display: flex;
 	flex-direction: row;
@@ -293,11 +268,6 @@
 }
 .cactus-comment-avatar-placeholder:before {
 	content: "?";
-}
-.cactus-comment-content {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
 }
 .cactus-comment-header {
 	display: flex;
@@ -370,7 +340,7 @@
 .spinner > div {
 	flex: 1;
 	background-color: var(--cactus-border-color);
-	animation: sk-stretchdelay 2.4s ease-in-out infinite;
+	animation: 2.4s ease-in-out infinite sk-stretchdelay;
 }
 .spinner .rect2 {
 	animation-delay: -2.2s;
@@ -412,8 +382,8 @@
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
 	outline: 0;
 	cursor: pointer;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 .cactus-send-button:active:not([disabled]) {
 	background: #1a70c7 !important;
@@ -436,4 +406,3 @@
 	border: 1px solid #bbb;
 	box-shadow: 0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.1);
 }
-/*# sourceMappingURL=/style.css.map */
