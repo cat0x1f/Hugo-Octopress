@@ -83,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # 更改帖子的 URL，和旧的样式
   continueReadingText = "你想要阅读更多吗? &rarr;"
 
   # 谷歌分析代码（Google analytics code），如果你不需要就移除它，需要 JavaScript
-  # googleAnalytics = "UA-XXXXX-X"
+  # googleAnalytics = "G-XXXXXXXXX"
 
   # 可选的 piwik 跟踪
   # [params.analytics.piwik]

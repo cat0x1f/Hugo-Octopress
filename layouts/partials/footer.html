@@ -26,13 +26,21 @@
     {{ end }}
     <!-- End Piwik Code -->
 
-    {{ with .Site.Params.googleAnalytics }}
+    <!-- {{ with .Site.Params.googleAnalytics }}
       <script>
         var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
       </script>
-    {{ end }}
+    {{ end }} -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.googleAnalytics}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', {{.Site.Params.googleAnalytics}});
+    </script>
   </body>
 </html>
