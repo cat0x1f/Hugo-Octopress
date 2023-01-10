@@ -43,7 +43,7 @@
       <section class="even">
         <h1>Recent Posts</h1>
         <ul id="recent_posts">
-          {{ $pages := where $.Site.Pages "Type" "post" }}
+          {{ $pages := where $.Site.Pages "Type" "posts" }}
           {{ range first . $pages }}
             {{ if .IsPage }}
               <li class="post">
