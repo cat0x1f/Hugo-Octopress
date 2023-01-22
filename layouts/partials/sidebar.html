@@ -29,7 +29,7 @@
         {{ end }}
         {{ range $.Site.Menus.sidebar }}
           <li>
-            <a href="{{ .URL | absURL }}" title="{{ .Name }}" {{ if eq $.Site.Params.sidebarNewWindow true }} target="_blank" rel="noopener noreferrer" {{ end }}>{{ .Name }}</a>
+            <a href="{{ .URL | safeURL }}" title="{{ .Name }}" {{ if eq $.Site.Params.sidebarNewWindow true }} target="_blank" rel="noopener noreferrer" {{ end }}>{{ .Name }}</a>
           </li>
         {{ end }}
       </section>
