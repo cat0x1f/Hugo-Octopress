@@ -85,7 +85,7 @@ video {
 	font: inherit;
 	font-size: 100%;
 	vertical-align: baseline;
-	font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 }
 html {
 	line-height: 1;
@@ -178,7 +178,7 @@ article > footer,
 aside.sidebar section,
 body > footer,
 body > header h2 {
-	font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 }
 .mono,
 code,
@@ -191,7 +191,7 @@ tt {
 }
 body > header h1 {
 	font-size: 2.2em;
-	font-family: "PT Serif", Georgia, "Helvetica Neue", Arial, sans-serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 	font-weight: 400;
 	line-height: 1.2em;
 	display: inline-block;
@@ -711,7 +711,7 @@ body > header h1 a:visited {
 	text-decoration: none;
 }
 body > header h2 {
-	font-family: "PT Serif", Georgia, "Helvetica Neue", Arial, sans-serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 	margin: 0.2em 0 0;
 	font-size: 1em;
 	color: #aaa;
@@ -751,7 +751,7 @@ body > nav form {
 body > nav form .search {
 	padding: 0.3em 0.5em 0;
 	font-size: 0.85em;
-	font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 	line-height: 1.6em;
 	width: 95%;
 	background-clip: padding-box;
@@ -835,7 +835,7 @@ body > nav ul {
 	}
 	body > nav a {
 		color: #6b6b6b;
-		font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+		font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 		text-shadow: #ebebeb 0 1px;
 		float: left;
 		text-decoration: none;
@@ -1098,7 +1098,7 @@ article > footer p.meta {
 }
 #content .blog-index article {
 	padding-top: 2em;
-	font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 }
 #content .blog-index article header {
 	background: 0 0;
@@ -1375,7 +1375,7 @@ figure.code figcaption a:hover {
 		text-align: right;
 		left: 0;
 		top: 3em;
-		font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+		font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
 	}
 	#blog-archives a.category {
 		line-height: 1.1em;
