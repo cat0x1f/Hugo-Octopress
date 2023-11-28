@@ -28,9 +28,10 @@
           <h1>{{ . }}</h1>
         {{ end }}
         {{ range $.Site.Menus.sidebar }}
+        <ul>
           <li>
             <a href="{{ .URL | safeURL }}" title="{{ .Name }}" {{ if eq $.Site.Params.sidebarNewWindow true }} target="_blank" rel="noopener noreferrer" {{ end }}>{{ .Name }}</a>
-          </li>
+          </li></ul>
         {{ end }}
       </section>
     {{ end }}

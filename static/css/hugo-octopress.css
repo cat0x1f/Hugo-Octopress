@@ -988,6 +988,7 @@ article header p {
 }
 article header p.meta {
 	text-transform: uppercase;
+	color: #525252;
 	top: 0;
 }
 @media only screen and (min-width: 768px) {
